@@ -16,7 +16,7 @@ public class BaseClass {
 
 	@BeforeSuite
 	public void beforemethod() {
-		if (System.getProperty("browser").equalsIgnoreCase("chrome")) {
+		if (System.getProperty("browser").equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if (System.getProperty("browser").equalsIgnoreCase("firefox")) {
@@ -28,7 +28,7 @@ public class BaseClass {
 		}
 		driver.get(System.getProperty("url"));
 		driver.manage().window().maximize();
-		driver.findElement(By.xpath("//textarea[@aria-label='Search']")).sendKeys("Hello");
+		//driver.findElement(By.xpath("//textarea[@aria-label='Search']")).sendKeys("Hello");
 
 	}
 
