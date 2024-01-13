@@ -23,7 +23,7 @@ public class SampleTest extends BaseClass{
 
 	@Test
 	public void methodFour() {
-		System.out.print("4");
+		System.out.print("Hello 4");
 	}
 
 }
